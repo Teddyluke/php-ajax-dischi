@@ -1,5 +1,6 @@
 <?php
 
+
 $database = [
   [
     "poster" => "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg",
@@ -74,35 +75,7 @@ $database = [
   ]
 ];
 
+  header('Content-Type: application/json');
+
+  echo json_encode($database);
  ?>
-
-<div class="container" style="background-color: grey; width:100%; height: 100%">
-
-  <?php
-
-  foreach ($database as $album) {
-    ?>
-    <div class="card" style="background-color: black; display: inline-block;">
-      <img src="<?php echo $album["poster"]; ?>" alt="" style="width: 200px; height: 200px;">
-      <div class="" style="color:white; text-align: center;">
-        <?php echo $album["title"]; ?>
-      </div>
-      <div class="" style="color:white; text-align: center;">
-        <?php echo $album["author"]; ?>
-      </div>
-      <div class="" style="color:white; text-align: center;">
-        <?php echo $album["genre"]; ?>
-      </div>
-      <div class="" style="color:white; text-align: center;">
-        <?php echo $album["year"]; ?>
-      </div>
-
-
-
-    </div>
-
-    <?php
-  }
-     ?>
-
-</div>
