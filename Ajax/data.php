@@ -1,6 +1,5 @@
 <?php
-
-
+  header('Content-Type: application/json');
 $database = [
   [
     "poster" => "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg",
@@ -43,7 +42,6 @@ $database = [
     "author" => "Eric Clapton",
     "genre" => "Rock",
     "year" => "2002"
-
   ],
   [
     "poster" => "https://images-na.ssl-images-amazon.com/images/I/51rggtPgmRL.jpg",
@@ -72,10 +70,10 @@ $database = [
     "author" => "Michael Jacjson",
     "genre" => "Pop",
     "year" => "1987"
-  ]
+  ],
 ];
 
-  header('Content-Type: application/json');
+
 
   echo json_encode($database);
  ?>
