@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.card {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.poster img {
+  height: 200px;
+  width: 200px;
+}
+
+body {
+  background-color: grey;
+  width: 100vw;
+  height: 100vh;
+
+}
+.titoli ul {
+  list-style: none;
+}
+
+.titoli li:first-of-type {
+  font-weight: bold;
+}

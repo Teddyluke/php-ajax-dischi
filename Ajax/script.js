@@ -1,7 +1,7 @@
 
 function getData() {
   $.ajax({
-    url:'data.php',
+    url:'http://localhost/php-ajax-dischi/Ajax/data.php',
     method: "GET",
     success: function (data) {
       var album = data[i];
@@ -9,7 +9,7 @@ function getData() {
       var template = $("#album-template").html();
       var compiled = Handlebars.compile(template);
       for (var i = 0; i < data.length; i++) {
-        console.log("ok");
+        var album = data[i];
         var albumHTML = compiled({
           "poster": album["poster"],
           "title": album["title"],

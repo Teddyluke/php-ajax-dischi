@@ -10,9 +10,7 @@
     <script id="album-template" type="text/x-handlebars-template">
   <div class="card">
     <div class="poster">
-      {{# if poster_path}}
-      <img src="{{poster}}" alt="poster">
-      {{/if}}
+      <img src="{{{poster}}}" alt="poster">
     </div>
     <ul>
       <li> {{title}}</li>
